@@ -1,5 +1,4 @@
-from email.errors import HeaderDefect
-from turtle import title
+ 
 import requests
 from bs4 import BeautifulSoup
 
@@ -31,10 +30,10 @@ the string should be formatted with each citation needed on own line,
 in order found.
     """
 
-     # request data from URL 
+     # request data from URL ## 
     page=requests.get(url)
 
-    # GET THE CONTENTS  
+    # GET THE CONTENTS  ##
     s=BeautifulSoup(page.content,'html.parser') 
 
     report=''
